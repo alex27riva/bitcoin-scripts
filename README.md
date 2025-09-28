@@ -2,6 +2,8 @@
 
 Repo for my Bitcoin scripts
 
+<img src="images/bitcoin-scripts.webp" width="400"/>
+
 ## RPC connection
 
 - Configure bitcoind to allow incoming RPC connections
