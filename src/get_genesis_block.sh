@@ -2,12 +2,9 @@
 # get_genesis_block.sh
 # Usage: ./get_genesis_block.sh
 
+source src/connection.sh
 
-BITCOIN_CLI="bitcoin-cli"
-
-if [[ -n $RPC_USER && -n $RPC_PASSWORD && -n $RPC_HOST && -n $RPC_PORT ]]; then
-BITCOIN_CLI="bitcoin-cli -rpcuser=$RPC_USER -rpcpassword=$RPC_PASSWORD -rpcconnect=$RPC_HOST:$RPC_PORT"
-fi
+BITCOIN_CLI=$(configure_bitcoin_cli)
 
 # Get first block hash
 # shellcheck disable=SC2206

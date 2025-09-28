@@ -12,5 +12,5 @@ result=$?
 if [[ $result == 0 ]]; then
     echo "✅ Connection successful"
 else
-    echo " ❌ Connection error"
+    echo "❌ Connection error"
 fi
