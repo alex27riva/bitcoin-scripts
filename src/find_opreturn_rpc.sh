@@ -61,10 +61,10 @@ for ((h=START; h<=END; h++)); do
             --arg asm "$asm" \
             --arg hex "$hex" \
             --arg decoded "$decoded" \
-            '{height:($height|tonumber),
+            '{height:$height,
               blockhash:$blockhash,
               txid:$txid,
-              vout_index:($vout|tonumber),
+              vout_index:$vout,
               asm:$asm,
               hex:$hex,
               decoded:$decoded}' >> "$OUTFILE"
