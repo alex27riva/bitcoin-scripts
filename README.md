@@ -1,7 +1,8 @@
 # bitcoin-scripts
+
 Repo for my Bitcoin scripts
 
-## RCP connection
+## RPC connection
 
 - Configure bitcoind to allow incoming RPC connections
 
